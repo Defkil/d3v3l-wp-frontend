@@ -19,7 +19,7 @@ jobs:
           npm ci
           npm run build-storybook
           npm run compodoc:build
-          npm run build --base-href=live --output-path=./static-docs/live
+          npm run build --base-href=live --output-path=static-docs/live
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
