@@ -13,12 +13,13 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
+          mkdir docs
           npm run build-storybook
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: main
+          BRANCH: pages
           FOLDER: storybook-static
           CLEAN: true
-          TARGET_FOLDER: docs/storybook
+          TARGET_FOLDER: live/storybook
