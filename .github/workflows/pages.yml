@@ -17,7 +17,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm ci
-          npm run build --base-href=live --output-path=static-docs/live
+          npx ng build --base-href=live --output-path=static-docs/live
           npm run build-storybook
           npm run compodoc:build
       - name: Deploy 🚀
