@@ -21,4 +21,4 @@ jobs:
           BRANCH: main
           FOLDER: storybook-static
           CLEAN: true
-          TARGET_FOLDER: storybook
+          TARGET_FOLDER: docs/storybook
