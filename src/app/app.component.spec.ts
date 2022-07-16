@@ -16,9 +16,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tdev'`, () => {
+  it(`should have as title 'D3V3L WP Frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tdev');
+    expect(app.title).toEqual('D3V3L WP Frontend');
   });
 });
