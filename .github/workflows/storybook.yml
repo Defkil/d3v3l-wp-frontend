@@ -23,5 +23,5 @@ jobs:
         with:
           BRANCH: gh-pages
           FORCE: true
-          FOLDER: storybook-static
-          TARGET_FOLDER: storybook
+          FOLDER: static-docs/storybook
+          TARGET_FOLDER: ./storybook
