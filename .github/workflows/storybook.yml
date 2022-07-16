@@ -1,7 +1,10 @@
 name: Storybook build and deploy
 on:
   push:
-    paths: ["src/**/*"]
+    branches:
+      - main
+permissions:
+  contents: write
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
