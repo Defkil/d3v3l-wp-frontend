@@ -13,7 +13,6 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          mkdir docs
           npm run build-storybook
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
@@ -22,4 +21,4 @@ jobs:
           BRANCH: pages
           FOLDER: storybook-static
           CLEAN: true
-          TARGET_FOLDER: live/storybook
+          TARGET_FOLDER: docs/storybook
