@@ -11,7 +11,10 @@
     "stylelint": "stylelint 'src/**/*.css'",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "npm run docs:json && start-storybook -p 6006",
-    "build-storybook": "npm run docs:json && build-storybook -o ./static-docs/storybook"
+    "build-storybook": "npm run docs:json && build-storybook -o ./static-docs/storybook",
+    "compodoc:build": "compodoc -p tsconfig.doc.json -d ./static-docs/compodoc",
+    "compodoc:build-and-serve": "npm run compodoc:build -- -s",
+    "compodoc:serve": "compodoc -s"
   },
   "private": true,
   "dependencies": {
