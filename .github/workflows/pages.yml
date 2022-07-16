@@ -1,4 +1,4 @@
-name: Storybook build and deploy
+name: Pages build and deploy
 on:
   push:
     branches:
@@ -18,10 +18,11 @@ jobs:
         run: |
           npm ci
           npm run build-storybook
+          npm run compodoc:build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           BRANCH: gh-pages
           FORCE: true
-          FOLDER: static-docs/storybook
-          TARGET_FOLDER: ./storybook
+          FOLDER: static-docs/
+          TARGET_FOLDER: /
